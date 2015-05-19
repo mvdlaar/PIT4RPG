@@ -14,6 +14,5 @@ namespace PIT4RPG.Model
             boog.Naam = "Basale boog";
             Uitrustingen.Add(boog);
         }
-
     }
 }
