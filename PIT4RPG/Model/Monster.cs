@@ -51,7 +51,19 @@ namespace PIT4RPG.Model
             levens = levens - schade;
             if (levens > 0) // It's Alive!
             {
-                
+                slachtoffer.StelHPBij(GewoonBattleCalc(slachtoffer));
+            }
+        }
+
+        public int GewoonBattleCalc(Character slachtoffer) //Vrij duidelijk
+        {
+            if (aanval > slachtoffer.Verdediging)
+            {
+                return aanval - slachtoffer.Verdediging;
+            }
+            else
+            {
+                return 0;
             }
         }
     }

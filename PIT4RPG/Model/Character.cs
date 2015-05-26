@@ -80,7 +80,19 @@ namespace PIT4RPG.Model
 
         public int BattleCalc(Monster slachtoffer)
         {
-            return aanval - slachtoffer.Verdediging;
+            if (aanval > slachtoffer.Verdediging)
+            {
+                return aanval - slachtoffer.Verdediging;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public void StelHPBij(int schade)
+        {
+            levens -= schade;
         }
     }
 }
