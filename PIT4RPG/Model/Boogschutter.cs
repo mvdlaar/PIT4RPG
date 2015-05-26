@@ -13,6 +13,10 @@ namespace PIT4RPG.Model
             Uitrusting boog = new Uitrusting();
             boog.Naam = "Basale boog";
             Uitrustingen.Add(boog);
+
+            Levens = 30;
+            Aanval = 7;
+            Verdediging = 1;
         }
     }
 }

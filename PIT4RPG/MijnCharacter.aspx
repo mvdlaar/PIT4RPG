@@ -10,7 +10,10 @@
     <form id="form1" runat="server">
     <div>
         Naam: <asp:Label ID="lbNaam" runat="server" Text="Label"></asp:Label><br/>
-        Leeftijd: <asp:Label ID="lbLeeftijd" runat="server" Text="Label"></asp:Label><br/>
+        Leeftijd: <asp:Label ID="lbLeeftijd" runat="server" Text="Label"></asp:Label>
+        <br />
+        Levens: <asp:Label ID="lbLevens" runat="server" Text="Label"></asp:Label>
+        <br/>
         Uitrusting:<br/>
         <asp:ListBox ID="lbxUitrusting" runat="server" Width="300px"></asp:ListBox>
     </div>

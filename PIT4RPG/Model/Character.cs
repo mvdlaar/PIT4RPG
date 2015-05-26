@@ -75,7 +75,7 @@ namespace PIT4RPG.Model
 
         public void Aanvallen(Monster slachtoffer)
         {
-            slachtoffer.StelHPBij(this, BattleCalc(slachtoffer));
+            slachtoffer.StelHPBij(this, GewoonBattleCalc(slachtoffer));
         }
 
         public int GewoonBattleCalc(Monster slachtoffer)

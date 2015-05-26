@@ -19,6 +19,7 @@ namespace PIT4RPG
                 Character mijnCharacter = (Character)Session["mijnCharacter"];
                 lbNaam.Text = mijnCharacter.Naam;
                 lbLeeftijd.Text = mijnCharacter.Leeftijd.ToString();
+                lbLevens.Text = mijnCharacter.Levens.ToString();
                 foreach (Uitrusting u in mijnCharacter.Uitrustingen)
                 {
                     lbxUitrusting.Items.Add(u.Naam);
@@ -28,6 +29,7 @@ namespace PIT4RPG
             {
                 lbNaam.Text = "";
                 lbLeeftijd.Text = "";
+                lbLevens.Text = "";
             }
         }
     }
