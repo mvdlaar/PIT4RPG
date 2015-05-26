@@ -72,5 +72,15 @@ namespace PIT4RPG.Model
         {
             uitrustingen = new List<Uitrusting>();
         }
+
+        public void Aanvallen(Monster slachtoffer)
+        {
+            slachtoffer.StelHPBij(this, BattleCalc(slachtoffer));
+        }
+
+        public int BattleCalc(Monster slachtoffer)
+        {
+            return aanval - slachtoffer.Verdediging;
+        }
     }
 }

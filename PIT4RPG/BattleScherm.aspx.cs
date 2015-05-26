@@ -33,5 +33,10 @@ namespace PIT4RPG
                 mijnMonster = (Monster) Session["mijnMonster"];
             }
         }
+
+        protected void btAanvallen_Click(object sender, EventArgs e)
+        {
+            mijnCharacter.Aanvallen(mijnMonster);
+        }
     }
 }

@@ -10,6 +10,8 @@
     <form id="form1" runat="server">
     <div>
     
+        <asp:Button ID="btAanvallen" runat="server" OnClick="btAanvallen_Click" Text="Aanvallen" />
+    
     </div>
     </form>
 </body>

@@ -45,5 +45,14 @@ namespace PIT4RPG.Model
             get { return verdediging; }
             set { verdediging = value; }
         }
+
+        public void StelHPBij(Character slachtoffer, int schade)
+        {
+            levens = levens - schade;
+            if (levens > 0) // It's Alive!
+            {
+                
+            }
+        }
     }
 }
