@@ -65,12 +65,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BattleScherm.aspx" />
     <Content Include="Global.asax" />
     <Content Include="MaakCharacter.aspx" />
     <Content Include="MijnCharacter.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleScherm.aspx.cs">
+      <DependentUpon>BattleScherm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BattleScherm.aspx.designer.cs">
+      <DependentUpon>BattleScherm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
