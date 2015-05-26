@@ -78,7 +78,7 @@ namespace PIT4RPG.Model
             slachtoffer.StelHPBij(this, BattleCalc(slachtoffer));
         }
 
-        public int BattleCalc(Monster slachtoffer)
+        public int GewoonBattleCalc(Monster slachtoffer)
         {
             if (aanval > slachtoffer.Verdediging)
             {
