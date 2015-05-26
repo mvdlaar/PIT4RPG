@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace PIT4RPG.Model
 {
-    public class Monster
+    public abstract class Monster
     {
+        private int levens;
+        private int aanval;
+        private int verdediging;
+
         private List<Uitrusting> uitrustingen;
         private Locatie locatie;
 
@@ -22,6 +26,24 @@ namespace PIT4RPG.Model
         {
             get { return uitrustingen; }
             set { uitrustingen = value; }
+        }
+
+        public int Levens
+        {
+            get { return levens; }
+            set { levens = value; }
+        }
+
+        public int Aanval
+        {
+            get { return aanval; }
+            set { aanval = value; }
+        }
+
+        public int Verdediging
+        {
+            get { return verdediging; }
+            set { verdediging = value; }
         }
     }
 }

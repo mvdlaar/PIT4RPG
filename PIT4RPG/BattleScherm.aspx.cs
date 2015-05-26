@@ -19,7 +19,19 @@ namespace PIT4RPG
             {
                 mijnCharacter = (Character)Session["mijnCharacter"];
             }
-            mijnMonster = new Monster();
+            else
+            {
+                throw new NullReferenceException();
+            }
+            if (Session["mijnMonster"] == null)
+            {
+                mijnMonster = new Hamster();
+                Session["mijnMonster"] = mijnMonster;
+            }
+            else
+            {
+                mijnMonster = (Monster) Session["mijnMonster"];
+            }
         }
     }
 }

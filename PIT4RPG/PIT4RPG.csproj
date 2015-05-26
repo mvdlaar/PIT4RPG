@@ -99,6 +99,7 @@
     <Compile Include="Model\Boogschutter.cs" />
     <Compile Include="Model\Character.cs" />
     <Compile Include="Model\Genezer.cs" />
+    <Compile Include="Model\Hamster.cs" />
     <Compile Include="Model\Locatie.cs" />
     <Compile Include="Model\Monster.cs" />
     <Compile Include="Model\Uitrusting.cs" />
